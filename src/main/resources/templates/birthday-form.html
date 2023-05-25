@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Birthday Form</title>
+</head>
+<body>
+<h1>Birthday Form</h1>
+<form action="#" th:action="@{/birthday}" th:object="${birthday}" method="post">
+    <label for="name">Name:</label>
+    <input type="text" id="name" th:field="*{name}" required>
+    <br>
+    <label for="date">Date:</label>
+    <input type="date" id="date" th:field="*{date}" required>
+    <br>
+    <input type="submit" value="Submit">
+</form>
+</body>
+</html>
